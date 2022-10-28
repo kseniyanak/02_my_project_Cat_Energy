@@ -1,0 +1,54 @@
+/* Page-header*/
+
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo-image {
+  margin-top: 13px;
+  margin-left: 22px;
+}
+
+.page-header_logo-text {
+  position: absolute;
+  top: 22px;
+  left: 117px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header_logo-text {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin-top: 26px;
+    margin-left: 30px;
+    width: 174px;
+    height: 52px;
+    background: url("../../img/logo-tablet.png") no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header_logo-text {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin-top: 53px;
+    margin-left: 110px;
+    width: 202px;
+    height: 59px;
+    background: url("../../img/logo-desktop.png") no-repeat;
+  }
+}
